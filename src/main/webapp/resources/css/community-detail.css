@@ -1,0 +1,212 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {list-style-type: none;}
+
+
+#wrap {
+    margin: 50px auto;
+    max-width: 1140px;
+    padding: 0 15px;
+}
+
+#wrap .category-tabs {
+    width: 100%;
+    display: flex;
+    height: 40px;
+    background-color: #fff;
+    margin-top: 70px;
+}
+
+#wrap .category-tabs .category-tab {
+    flex-grow: 1;
+    color: #d13873;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-bottom: 2px solid #d13873;
+}
+
+#wrap .category-tabs .category-tab:hover {
+    color: #fff;
+    background-color: #d13873;
+}
+
+#wrap .post-container {
+    background-color: #fff;
+    padding: 40px 20px;
+}
+.container #title-box {
+    border-bottom: 2px solid #d13873;
+    margin: 0 auto;
+}
+
+#title-box > li {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#title-box #post-category {
+    display: inline-block;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #d13873;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#title-box ul {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    border-bottom: 2px solid #d13873;
+    padding-bottom: 20px;
+}
+#title-box ul li:first-child {color: rgb(128, 128, 128);}
+#title-box #post-owner {
+    display: inline-block;
+    padding-right: 20px;
+    margin-right: 20px;
+    border-right: 1px solid rgb(128, 128, 128);
+    color: rgb(128, 128, 128);
+}
+#title-box #post-owner:hover {color: #d13873;}
+
+.ownerbtn {
+    padding: 0 8px;
+    font-size: 0.8rem;
+    height: 24px;
+    border-radius: 12px;
+    background-color: #fff;
+    border: 1px solid #d13873;
+    cursor: pointer;
+}
+#title-box .modify {margin-right: 5px;}
+
+#post-content {
+    padding: 40px 0;
+    min-height: 300px;
+    width: 90%;
+    margin: 0 auto;
+}
+#backtolist-box {
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    margin: 0 auto;
+}
+#back-to-list {
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: #d13873;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#wrap .comment-container {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.comment-container h4 {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: #d13873;
+}
+.comment-container #new-comment {
+    width: 90%;
+    overflow: scroll;
+    border: 1px solid #ccc;
+    margin: 15px auto;
+    display: block;
+    resize: none;
+    overflow: auto;
+}
+.input-comment {
+    width: 90%;
+    margin: 0 auto 20px;
+    text-align: center;
+    border: none;
+    background-color: #d13873;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    font-size: 1rem;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+#comment-info {
+    width: 85%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+#comment-info li:first-child {color: rgb(128, 128, 128);}
+#comment-owner {
+    font-weight: bold;
+    margin-right: 20px;
+}
+.commentbtn {
+    color: rgb(128, 128, 128);
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+#comment-info .delete {
+    margin-left: 5px;
+}
+
+
+#comment-content {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 0.9rem;
+}
+#reply {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: block;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    color: rgb(128, 128, 128);
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    border-bottom: 1px solid #ccc;
+}

@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {list-style-type: none;}
+
+#login-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 100px;
+}
+
+#login {
+    max-width: 500px;
+    min-width: 215px;
+    width: 80%;
+}
+
+#logo {
+    font-family: 'Do Hyeon', sans-serif;
+    display: block;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #d13873;
+    margin-top: 100px;
+}
+
+#login #tabs {
+    display: flex;
+}
+#login #tabs a {
+    flex-grow: 1;
+    border: 2px solid #ccc;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #fff;
+}
+#login #tabs #login-tab {
+    border: 2px solid #d13873;
+    background-color: #d13873;
+    color: #fff;
+}
+
+#login-form {
+    border: 2px solid #ccc;
+    border-top: none;
+    padding: 60px 0;
+    background-color: #fff;
+}
+#login-form > ul {
+    width: 70%;
+    margin: 0 auto;
+}
+#login-form #id,
+#login-form #password {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+#login-form button {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border: none;
+    background-color: #d13873;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+#login-form #maintain{visibility: hidden;}
+#login-form label[for="maintain"] {
+    margin-left: 5px;
+    font-size: 0.8rem;
+    position: relative;
+    top: -1px;
+    
+    visibility: hidden;
+}
+#login-form > ul ul {
+    display: flex;
+    justify-content: space-between;
+}
+#login-form #find {
+    font-size: 0.8rem;
+    border-bottom: 1px solid black;
+}
+#login-form #find:hover {
+    color: #d13873;
+    border-bottom: 1px solid #d13873;
+}
+

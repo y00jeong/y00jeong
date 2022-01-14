@@ -1,0 +1,251 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {list-style-type: none;}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+header #header-wrap {
+    max-width: 1140px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+}
+
+header #logo {
+    margin-right: 10px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+header #logo a {color: #d13873;}
+
+header #nav {
+    display: flex;
+    margin: 0 15px;
+    flex-grow: 1;
+}
+header #nav li {
+    padding: 10px;
+    height: 50px; 
+    display: flex;
+    align-items: center; 
+    width: 95px;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+header #nav li:hover {
+    border-bottom: 3px solid #d13873;
+}
+
+header #nav li:hover a {color: #d13873;}
+
+header #nav li a {
+    color: black;
+    width: 100%;
+}
+
+header .user {
+    border: 3px solid #d13873;
+    color: #d13873;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    overflow: hidden;
+    cursor: pointer;
+}
+header .user-logout {
+	border: 3px solid rgb(120, 120, 120);
+    color: rgb(120, 120, 120);
+}
+
+header #menubtn {display: none;}
+
+header #user-menu-login {
+    display: none;
+    width: 120px;
+    position: absolute;
+    background-color: #eee;
+    top: 50px;
+    right: 15px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+header #user-menu-login .user-nickname {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+header #user-menu-logout {
+    display: none;
+    width: 120px;
+    position: absolute;
+    background-color: #eee;
+    top: 50px;
+    right: 15px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+header #user-menu-login.active {display: inline-block;}
+header #user-menu-logout.active {display: inline-block;}
+
+header #user-menu-login li {
+    padding: 5px 0;
+    text-align: center;
+}
+header #user-menu-logout li {
+    padding: 5px 0;
+    text-align: center;
+}
+header #user-menu-login li a {color: black;}
+header #user-menu-login li a:hover {color: #d13873;}
+header #user-menu-logout li a {color: black;}
+header #user-menu-logout li a:hover {color: #d13873;}
+
+header #menu {display: none;}
+
+
+@media screen and (max-width:1023px) {
+    /* 타블렛 */
+    }
+
+
+    /* 모바일 */
+@media screen and (max-width:767px) {
+
+header #header-wrap {
+    justify-content: space-between;
+}
+
+header #nav{display: none;} 
+header .user{display: none;}
+header #user-menu-login.active {display: none;}
+header #user-menu-logout.active {display: none;}
+
+header #menubtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    cursor: pointer;
+    color: #d13873;
+}
+
+header #menu {
+    display: none;
+    width: 200px;
+    background-color: #eee;
+    border-radius: 10px;
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    padding: 10px;
+    border: 2px solid #ccc;
+}
+
+header #menu p {
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+header #menu #user-logout {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+}
+header #menu #user-logout li {
+    padding: 5px 0;
+    width: 85px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 0.9rem;
+}
+
+header #menu #user-login {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+}
+header #menu #user-login li {
+    padding: 5px 0;
+    width: 85px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 0.9rem;
+}
+header #menu #user-login li:hover {border: 2px dashed #d13873;}
+header #menu #user-login li:hover a {color: #d13873;}
+header #menu #user-logout li:hover {border: 2px dashed #d13873;}
+header #menu #user-logout li:hover a {color: #d13873;}
+
+header #menu #category {
+    padding: 0 10px;
+}
+
+header #menu #category li {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+header #menu #category li a:hover {
+    color: #d13873;
+    font-weight: bold;
+}
+
+header #menu.active {
+    display: inline-block;
+}
+
+}

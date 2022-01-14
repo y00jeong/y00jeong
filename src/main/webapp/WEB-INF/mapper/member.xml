@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  
+<mapper namespace="member">
+	<select id="selectMember" parameterType="memberVO" resultType="memberVO">
+		select mnum, id, password, email, pw_find_question, pw_find_answer, skin_type, skin_tone, isdelete
+		from member
+		where id = #{id}
+		and password = #{password}
+	</select>
+	
+	<select id="checkID" parameterType="String" resultType="int">
+		select count(id) from member
+		where id = #{id}
+	</select>
+	
+	<insert id="insertMember" parameterType="memberVO">
+		insert into member(id, password, email, pw_find_question, pw_find_answer, skin_type, skin_tone)
+		values(#{id}, #{password}, #{email}, #{pwFindQuestion}, #{pwFindAnswer}, #{skinType}, #{skinTone})
+	</insert>
+	
+	
+</mapper>

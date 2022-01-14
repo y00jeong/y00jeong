@@ -1,0 +1,171 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {list-style-type: none;}
+
+#signup-wrap {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 100px;
+}
+
+#signup {
+    max-width: 500px;
+    min-width: 215px;
+    width: 80%;
+}
+
+#logo {
+    font-family: 'Do Hyeon', sans-serif;
+    display: block;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #d13873;
+    margin-top: 100px;
+}
+
+#signup #tabs {
+    display: flex;
+}
+#signup #tabs a {
+    flex-grow: 1;
+    border: 2px solid #ccc;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+#signup #tabs #signup-tab{
+    border-right: none;
+    border: 2px solid #d13873;
+    background-color: #d13873;
+    color: #fff;
+}
+
+
+
+#signup-form {
+    border: 2px solid #ccc;
+    border-top: none;
+    padding: 60px 0;
+    background-color: #fff;
+}
+#signup-form > ul {
+    width: 70%;
+    margin: 0 auto;
+}
+#signup-form ul li {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#signup-form li input {
+    height: 40px;
+    border: 1px solid #ccc;
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+.skin {margin-left: 15px; margin-top: 15px;}
+.skin-type,
+.skin-tone {
+    display: flex;
+    justify-content: space-between;
+}
+#signup-form li input[type="radio"] {
+    width: 15px;
+    height: 15px;
+}
+.skin-type label,
+.skin-tone label {
+    position: relative;
+    top: -5px;
+    margin-left: 10px;
+}
+
+#signup-form .check {
+    height: 40px;
+    padding: 0 20px;
+    font-size: 0.8rem;
+    border: none;
+    cursor: pointer;
+    background-color: #ccc;
+    font-weight: 700;
+}
+
+#signup-form label[for="pwquestion"] {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 1rem;
+}
+
+#signup-form #pwquestion {
+    flex-grow: 1;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}
+
+#signup-form #terms {
+    margin-top: 30px;
+}
+#signup-form #terms li {
+    display: block;
+}
+#signup-form #terms li input {
+    width: 15px;
+    height: 15px;
+}
+#signup-form #terms label {
+    font-size: 0.7rem;
+    flex-grow: 1;
+    width: 155px;
+    margin-left: 10px;
+    position: relative;
+    top: -4px;
+    display: inline-block;
+}
+#signup-form #terms .terms-detail {
+    font-size: 0.7rem;
+    position: relative;
+    top: -4px;
+    text-decoration: underline;
+    color: rgb(111, 111, 111);
+    cursor: pointer;
+}
+
+#signup-form .signup-btn {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border: none;
+    background-color: #d13873;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+}
